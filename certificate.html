@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font-family: 'Georgia', serif;
+        background: #f9f7f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .certificate {
+        border: 12px double #444;
+        padding: 50px 80px;
+        width: 900px;
+        text-align: center;
+        background: #fff;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        border-radius: 15px;
+      }
+      .logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;      /* makes it circular */
+        object-fit: cover;       /* keeps aspect ratio inside circle */
+        margin-bottom: 20px;
+        border: 3px solid #444;  /* optional border around logo */
+      }
+      h1 {
+        font-size: 48px;
+        margin: 20px 0;
+        color: #2a2a2a;
+      }
+      h2 {
+        font-size: 28px;
+        color: #555;
+        margin: 10px 0;
+      }
+      p {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      .footer {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #333;
+      }
+      .certificate-id {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="certificate">
+      <!-- Circular logo -->
+      <img class="logo" src="file:///C:/Users/Ayon/python_proj/Automate%20certificate/scsce_logo.jpg" alt="Logo">
+
+
+      <h1>Certificate of Excellence</h1>
+      <h2>This certificate is proudly presented to</h2>
+      <h1>{{name}}</h1>
+      <p>For outstanding achievement and dedication</p>
+      <p>Date: {{date}}</p>
+
+      <!-- Footer signatures -->
+      <div class="footer">
+        <div>_____________________<br>Instructor</div>
+        <div>_____________________<br>Director</div>
+      </div>
+
+      <!-- Certificate ID -->
+      <div class="certificate-id">Certificate ID: {{cert_id}}</div>
+    </div>
+  </body>
+</html>
