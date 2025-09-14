@@ -18,7 +18,7 @@ if not SMTP_USER or not SMTP_PASS:
     raise ValueError("Set SMTP_USER and SMTP_PASS in .env")
 
 # 🔹 Path to wkhtmltopdf (update if installed elsewhere)
-WKHTMLTOPDF_PATH = r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
+WKHTMLTOPDF_PATH = r"file_path_of\wkhtmltopdf.exe"
 config = pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_PATH)
 
 # 🔹 PDF options (allow local file access)
@@ -71,3 +71,4 @@ for _, row in students.iterrows():
 # 🔹 Save results
 pd.DataFrame(results).to_csv("result.csv", index=False)
 print("\n✅ All done! Check result.csv for the summary.")
+
